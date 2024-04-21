@@ -1,0 +1,745 @@
+/*-------------------- alapok ----------------*/
+* {
+    font-family: "Nirmala UI", serif;
+    font-size: 10px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+body {
+    background: white;
+
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: right;
+}
+
+
+h1 {
+
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+button{
+    border: solid #333;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 200ms ease-in;
+}
+
+button:hover{
+    box-shadow: 5px 10px;
+    color: #333;
+    background: white;
+    transition: all 200ms ease-in-out;
+}
+/*-------------------- form ----------------*/
+
+
+form {
+    border: solid #333;
+    border-radius: 10px;
+    width: 300px;
+    margin: 100px auto;
+    padding: 10px;
+
+}
+
+form input[type=submit] {
+    background: #333;
+    cursor: pointer;
+
+}
+
+
+form input {
+    border: solid #333;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 200ms ease-in;
+}
+
+
+form input:hover {
+    box-shadow: 5px 10px;
+    transform: scale(1.2);
+    color: #333;
+    background: white;
+    transition: all 200ms ease-in-out;
+
+}
+
+
+form legend {
+    padding: 10px;
+    text-align: center;
+    margin: 20px auto;
+
+    font-size: 30px;
+    font-weight: bolder;
+
+}
+
+form label {
+    text-align: left;
+    margin: 20px auto;
+
+    font-size: 15px;
+
+}
+
+
+#flex-buttons {
+    margin: 10px 10px;
+    display: flex;
+}
+
+#flex-buttons > input {
+    margin: 0 10px;
+}
+
+/*-------------------- navigáció ----------------*/
+
+
+/*---- drop -----*/
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: #333;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*-- navigáció felso*/
+
+nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 8px 16px 0;
+    background-color: #333;
+}
+
+nav li a:hover {
+    transform: scale(1.1);
+    border: #333333;
+    border-radius: 10px;
+    background: white;
+    color: #333;
+    transition: all 300ms ease-in-out;
+
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 100px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 200ms ease-in-out;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 10px 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+
+}
+
+
+
+/*-------------------- kosár ----------------*/
+
+#basket {
+    padding: 100px 10px;
+    margin: 100px 50px;
+    text-align: center;
+}
+
+#basket-container {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+
+
+}
+
+#basket-items {
+    padding: 0 50px;
+    display: flex;
+
+}
+
+#basket img {
+    width: 60%;
+    padding: 20px;
+    margin: 0;
+    transition: 200ms ease-in-out;
+}
+
+.basket_item {
+    margin: 10px 10px;
+    border: 5px solid #333;
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+}
+
+.basket_item a {
+    border: solid red;
+    border-radius: 10px;
+    color: red;
+    text-decoration: none;
+}
+
+
+.basket_item:hover {
+    box-shadow: 5px 5px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+
+}
+
+#sum {
+    display: block;
+    text-align: left;
+}
+
+
+#sum a {
+    margin: 0 10px 0 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    border: white;
+    border-radius: 10px;
+}
+
+#sum h3 {
+    margin: 10px 0 50px;
+    text-align: left;
+    font-size: 30px;
+}
+
+
+/*-------------------- admin ----------------*/
+
+.admin-box {
+    margin: 100px auto;
+}
+
+.admin-form {
+    border: solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px auto;
+
+}
+
+
+/*-------------------- about_us ----------------*/
+#bemu{
+    background: #333;
+    color: white;
+    height: 70%;
+    width: 50%;
+    text-align: center;
+    margin: 200px 100px;
+    border: 10px solid #333;
+    border-radius: 10px;
+    padding-top: 0;
+    opacity: 0;
+    animation: about 500ms ease-in-out 700ms;
+    animation-fill-mode: forwards ;
+}
+
+#bemu h1{
+    transform: scale(0%);
+    animation: abh1 400ms ease-in-out 1s;
+    animation-fill-mode: forwards;
+}
+#bemu h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: abh2p 300ms ease-in-out 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#bemu p{
+    font-size: 13px;
+    opacity: 0;
+    animation: abh2p 300ms ease-in-out 1.7s;
+    animation-fill-mode: forwards;
+}
+
+
+.mellett {
+    margin: 100px 50px;
+
+}
+
+.mellett img {
+    border: 10px solid #333;
+    border-radius: 10px;
+    float: left;
+    width: 100%;
+}
+
+
+#balkep {
+    opacity: 0;
+    animation: levi 400ms ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+
+#jobkep{
+    opacity: 0;
+    animation: titan 400ms ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+
+/*-------------------- main elrendezés ----------------*/
+
+.main_content {
+    display: flex;
+}
+
+
+/*-------------------- shop ----------------*/
+.shop_content {
+    display: block;
+    padding: 10px;
+    margin: 100px 10px;
+}
+
+.shop_container {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.shop_items img {
+    width: 70%;
+    padding: 20px;
+    margin: 0;
+    transition: 200ms ease-in-out;
+}
+
+
+.shop_items {
+    padding: 10px 10px;
+    display: flex;
+}
+
+.item {
+    margin: 10px 30px;
+    transition: 600ms ease-in-out;
+}
+
+.item:hover {
+    height: 50%;
+    padding: 0 10px;
+    transition: 600ms ease-in-out;
+
+}
+
+
+.item p {
+    display: none;
+    margin: 10px;
+    font-size: 10px;
+}
+
+.item a {
+
+    display: none;
+
+
+}
+
+.item:hover a {
+    width: 50%;
+    text-align: center;
+    display: block;
+    border: solid #333;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+
+}
+
+.item:hover p {
+    display: block;
+}
+
+
+.item h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+
+
+.item h4 {
+    text-align: left;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 10px 10px;
+
+}
+
+
+.item:hover img {
+    width: 60%;
+
+}
+
+
+/*-------------------- profil page --------------------*/
+
+#pp {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+#kep {
+    display: flex;
+    border: solid #333;
+    border-radius: 0px;
+    width: 300px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+
+#profil{
+    background-color: #333;
+    color: white;
+    height: 375px;
+    width: 375px;
+    margin: 100px auto 30px;
+    border: 10px solid #333;
+    border-radius: 10px;
+
+}
+
+#profil img{
+    width: 50%;
+    height: 50%;
+    border: solid white;
+    border-radius: 50%;
+    margin: 10% auto 20px auto;
+    display: block;
+}
+
+#profil h1{
+ text-align: center;
+}
+
+#profil p{
+    margin: 10px auto;
+    font-size: 15px;
+    text-align: center;
+     color: lightgray;
+}
+
+
+
+#bmi{
+    height: 50%;
+    width: 375px;
+    margin: 20px;
+}
+
+#bmi h1{
+    margin-top: 25px;
+    text-align: left;
+}
+
+#bmi form{
+   margin: 20px;
+}
+
+#bmi form input{
+    margin: 10px 10px
+}
+
+#bmi form input[type=submit]{
+    width: 50%;
+}
+
+#bmi form label{
+    font-size: 20px;
+}
+
+table{
+    background-color: #333;
+    color: white;
+    height: 90%;
+    width: 100%;
+    border-spacing: 0;
+    border: 10px solid #333;
+    border-radius: 10px;
+}
+
+
+
+td{
+    border-bottom: solid white;
+}
+
+td:first-child{
+    width: 300px;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+td:last-child{
+    font-size: 20px;
+    font-weight: bolder;
+    color: darkgray;
+}
+
+#adatok{
+    height: 775px;
+    width: 40%;
+    margin: 100px 10px;
+    display: block;
+
+}
+
+#adatok input[type=button]{
+    float: left;
+    margin: 10px 50px 10px auto;
+    border: solid #333;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 200ms ease-in;
+}
+
+#adatok input[type=button]:hover{
+    box-shadow: 5px 10px;
+    color: #333;
+    background: white;
+    transition: all 200ms ease-in-out;
+}
+
+#rendelesek {
+    color: #333;
+    margin: 100px 10px;
+    height: 500px;
+    width: 20%;
+    border: solid #333;
+    border-radius: 10px;
+}
+
+#rendelesek h1 {
+    text-align: center;
+}
+
+
+#rendeles {
+    margin: 10px;
+}
+
+
+/*-------------------- animációk Levi <3333 ----------------*/
+@keyframes levi {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
+}
+
+
+@keyframes titan {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes about {
+    0%{
+        opacity: 0;
+}
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes abh1 {
+    0%{
+        transform: scale(0%);
+    }
+
+    80%{
+        transform: scale(120%);
+
+    }
+
+    100%{
+        transform: scale(100%);
+    }
+}
+
+@keyframes abh2p {
+   0%{
+       opacity: 0;
+}
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    nav li a {
+        padding: 20px 20px;
+
+    }
+
+    #side-menu li a {
+        padding: 20px 5px;
+        font-size: 10px;
+
+
+    }
+
+
+    form {
+        width: 200px;
+        margin: 100px auto 50px;
+        padding: 5px;
+    }
+    form input {
+
+        width: 100px;
+        margin: 0 auto;
+        padding: 5px;
+    }
+
+    form legend {
+        text-align: center;
+        padding: 5px 0;
+        margin: 5px auto;
+        font-size: 15px;
+
+    }
+
+    .item img {
+        width: 50%;
+    }
+
+    .item:hover {
+
+        display: flex;
+    }
+
+
+    #basket img {
+        width: 40%;
+    }
+
+    #sum a {
+        font-size: 10px;
+    }
+
+}
+
+@media print {
+    p {
+        font-size: 12pt;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1, h2, h3, h4 {
+        page-break-after: avoid;
+    }
+}
